@@ -9,8 +9,7 @@ public class MenuPrinter {
         System.out.println(" ");
         System.out.println("*** MENU ***");
         System.out.println("(1) Pokaż wszystkie produkty");
-        System.out.println("(2) Filtruj produkty");
-        System.out.println("(3) Zamknij sklep!");
+        System.out.println("(2) Zamknij sklep!");
         System.out.println(" ");
     }
 
@@ -63,7 +62,8 @@ public class MenuPrinter {
                     AddProductToBucket.Add(numbersLine);
 
                     System.out.println(" ");
-                    ClearConsole.Clean();
+                    System.out.println(" ");
+                   
                     System.out.println("Twój koszyk: ");
                     AddProductToBucket.ShowBucket();
                   

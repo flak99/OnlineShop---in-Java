@@ -22,18 +22,25 @@ public class AddProductToBucket {
     }
 
     static void ShowBucket(){
-   
+        double orderValue = 0.0;
+       ;
+            
         
         for(int i = 0; i<ProductData.products.size(); i++){
             for(int j =0; j< productsNumberArray.length; j++ ){
-
+             
             if(ProductData.products.get(i).id == productsNumberArray[j] ){
-                System.out.println(ProductData.products. get(i).prodName);
-            }
-            }
-            
+                
+                System.out.println(ProductData.products.get(i).prodName + " ---> " + ProductData.products.get(i).price + " zł");
+                orderValue += ProductData.products.get(i).price;
 
+            }
+            }
+        
         }
+
+        System.out.println(" ");
+        System.out.println("Wartość koszyka ---> " + orderValue + " zł");
 
     }
     
