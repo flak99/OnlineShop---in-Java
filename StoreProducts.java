@@ -25,6 +25,10 @@ public class StoreProducts {
     }
 
     
+public int GetID(){
+    return id;
+}
+    
 
 static void FiltrProductsByPrice( List<StoreProducts> products, int minValue, int maxValue){
      int amout = 0;  
