@@ -31,6 +31,11 @@ public int GetID(){
     
 
 static void FiltrProductsByPrice( List<StoreProducts> products, int minValue, int maxValue){
+
+//Sprawdzenie poprawnosci oraz ich poprawienie 
+
+   
+
      int amout = 0;  
      String alertString = """
                             *** MENU - Lista Zakupów ***
@@ -55,10 +60,7 @@ System.out.println(" ");
                 System.out.println("Brak prodkutów spłeniających okreslone przedziały!");
                 System.out.println(alertString);
             }
-
-System.out.println(" ");
-    }
-
+}
 
 }
 

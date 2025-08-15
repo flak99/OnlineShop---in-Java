@@ -48,7 +48,6 @@ public class MenuPrinter {
                     int minValue = scanner.nextInt();
                 System.out.print("Podaj maksymalną cenę --> ");
                     int maxValue = scanner.nextInt();
-                
                 StoreProducts.FiltrProductsByPrice(ProductData.products, minValue, maxValue);
                 wasShown = true;
             }
