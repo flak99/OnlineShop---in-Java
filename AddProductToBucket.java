@@ -22,7 +22,7 @@ public class AddProductToBucket {
     }
 
     static void ShowBucket(){
-        ClearConsole.Clean();
+   
         
         for(int i = 0; i<ProductData.products.size(); i++){
             for(int j =0; j< productsNumberArray.length; j++ ){

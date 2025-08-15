@@ -46,7 +46,7 @@ System.out.println(" ");
     for (int i=0;i<products.size();i++){
            
             if(products.get(i).price > minValue && products.get(i).price <maxValue){
-                System.out.println( i +"." + " " + products.get(i).prodName + " ----- " + products.get(i).price + " zł");
+                System.out.println( i+1 +"." + " " + products.get(i).prodName + " ----- " + products.get(i).price + " zł");
             amout++;
             }
     }
