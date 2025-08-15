@@ -1,39 +1,26 @@
 import java.util.Scanner;
 
 public class App {
-public static void main(String[] args) {
 
-    boolean isStop = false;
+    public static void main(String[] args) {
+        boolean isStop = false;
 
-    MenuPrinter.printMainMenu();
-    
-   
+        MenuPrinter.printMainMenu();
+        while (!isStop) {
 
-    while (!isStop) {
+            Scanner scanner = new Scanner(System.in);
+            System.out.print("Wybierz opcje--> ");
+            int userChoice = scanner.nextInt();
 
-        Scanner scanner = new Scanner(System.in);
-        System.out.print("Wybierz opcje--> ");
-        int userChoice = scanner.nextInt();
-
-
-        switch(userChoice) {
-        case 1:
-            ClearConsole.Clean();
-            MenuPrinter.printSubMenu(scanner);
-            break;
-    
-        default:
-
-            break;
+            switch (userChoice) {
+                case 1 -> {
+                    ClearConsole.Clean();
+                    MenuPrinter.printSubMenu(scanner);
+                }
+                default -> {
+                    System.out.println("Coś poszło nie tak - zły numer");
+                }
+            }
         }
-
-        
     }
-    
-
 }
-
-
-    
-}
-
